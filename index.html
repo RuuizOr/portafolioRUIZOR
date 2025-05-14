@@ -1,113 +1,519 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>20233TN087</title>     
-    <link rel="shortcut icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-pup-clipart-cute-cartoon-puppy-dog-vector-cartoon-on-white-background-png-image_6815360.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body {
-            background: #F2D7D5;
-        }   
-
-        .rowMenu {
-            margin: 0;
-            background-color: #AF601A;
-        }
-
-        .rowMargin {
-            margin: 0;
-        }
-
-        h3 {
-            font-size: 3em;
-            text-align: center;
-            color: white;
-            font-family: 'Agency FB';
-        }
-
-        .pie {
-            background-color: #AF601A;
-            text-align: left;
-            font-family: 'Agency FB';
-            color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 40px;
-        }
-
-        .datos {
-            width: 100%;
-            background: #AF601A;
-            padding: 30px;
-            margin: auto;
-            margin-top: 100px;
-            border-radius: 4px;
-            font-family: 'Agency FB';
-            color: white;
-            box-shadow: 7px 13px 37px black;
-            border-radius: 20px;
-            list-style: none;
-        }
-
-        .datos h4 {
-            font-size: 22px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Orlando</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="row rowMenu">
-        <div class="col-md-2">
-            <p align="right">
-            <img src="https://www.pngmart.com/files/16/Vector-Dog-Face-PNG-Free-Download.png" width="80" height="80">
+    <div class="cursor-follower"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="logo-text">RUIZ<span class="accent">OR</span></span>
         </div>
-        <div class="col-md-8" id="menu"><br>
-            <h3>BIENVENIDO</h3>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades-tecnicas">Conocimientos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hola, soy <span class="accent">Orlando</span></h1>
+                    <h2>Desarrollador <span class="typing-text"></span></h2>
+                    <div class="hero-buttons">
+                        <a href="#sobre-mi" class="btn primary">Conóceme</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-container">
+                        <pre><code>
+function <span class="accent">Developer</span>() {
+  const skills = [
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'React',
+    'Node.js',
+    'Spring Boot'
+  ];
+  
+  return {
+    resolver: (problema) => `Analizo y resuelvo: ${problema}`,
+    aprender: () => 'Siempre en búsqueda de nuevos conocimientos.',
+    crear: (idea) => `Transformo ideas en proyectos reales.`
+  };  
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="section">
+            <div class="section-header">
+                <h2>Sobre Mí</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="img/pro.webp" alt="Mi Foto" class="profile-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Soy un joven universitario apasionado por la tecnología y la programación, actualmente cursando la carrera de Desarrollo de Software en la Universidad Tecnológica de Emiliano Zapata (UTEZ).</p>
+                    <p>Desde que comencé mis estudios, he desarrollado un interés profundo por las herramientas y tecnologías que permiten crear soluciones innovadoras en el mundo digital. Mi objetivo profesional es llegar a trabajar en alguna empresa importante.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>TSU en Desarrollo de Software</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Morelos, México</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <div class="section-header">
+                <h2>Mis Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Liderazgo</h3>
+                    <p>Capacidad para guiar, motivar e inspirar a otros, fomentando un entorno de compromiso, responsabilidad y crecimiento constante.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3>Trabajo en equipo</h3>
+                    <p>Colaboración efectiva con otros, aportando ideas, respetando opiniones y construyendo resultados en conjunto hacia un objetivo común.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Comunicación asertiva</h3>
+                    <p>Expresión clara, respetuosa y directa de ideas, necesidades y opiniones, promoviendo el entendimiento y evitando conflictos innecesarios.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Solución de Problemas</h3>
+                    <p>Análisis y resolución eficiente de problemas complejos con soluciones creativas y efectivas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section">
+            <div class="section-header">
+                <h2>Mis Proyectos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-carousel-container">
+                <div class="projects-carousel">
+                    <div class="carousel-track">
+                        <div class="project-card" data-project="proyecto1">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Tricks</h3>
+                                <p>Plataforma diseñada para administrar a los aspirantes nuevos que ingresan a una institución.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Java Servlet</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/josemanuel11sans/Tricks" class="project-link"><i class="fab fa-github"></i> Frontend/Backend</a>
+                                </div>
+                                <button class="view-project-btn">Ver Galería</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="proyecto2">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-hospital"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Ris</h3>
+                                <p>Aplicación para monitorear medicinas, pacientes y doctores que se encuentran en un hospital.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/josemanuel11sans/Ris" class="project-link"><i class="fab fa-github"></i> Backend</a>
+                                    <a href="https://github.com/RuuizOr/Ris-Front" class="project-link"><i class="fab fa-github"></i> Frontend</a>
+                                </div>
+                                <button class="view-project-btn">Ver Galería</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="proyecto3">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Monitor de variables de entorno</h3>
+                                <p>Aplicación (web) para gestionar y monitorear dispositivos IoT que controlan las condiciones ambientales en salones de clases.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/AndresilloDev/MOVE-Backend" class="project-link"><i class="fab fa-github"></i> Backend</a>
+                                    <a href="https://github.com/AndresilloDev/MOVE-Web" class="project-link"><i class="fab fa-github"></i> Frontend</a>
+                                </div>
+                                <button class="view-project-btn">Ver Galería</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="proyecto4">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Identificador de creaturas</h3>
+                                <p>Es una aplicación web que te ayuda a identificar que tipo de creatura estás describiendo en base a sus características.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Figuritx79/criaturas-estructura-datos" class="project-link"><i class="fab fa-github"></i> Backend</a>
+                                    <a href="https://github.com/RuuizOr/IntegradoraDerick" class="project-link"><i class="fab fa-github"></i> Frontend</a>
+                                </div>
+                                <button class="view-project-btn">Ver Galería</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="proyecto5">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Gestión de vehículos</h3>
+                                <p>Aplicación generada para gestionar servicios asignados a vehículos dentro de un taller mecánico.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/josemanuel11sans/GestonDeVehiculos" class="project-link"><i class="fab fa-github"></i> Backend</a>
+                                    <a href="https://github.com/RuuizOr/GestionVehiculos-Front" class="project-link"><i class="fab fa-github"></i> Frontend</a>
+                                </div>
+                                <button class="view-project-btn">Ver Galería</button>
+                            </div>
+                        </div>
+                        <div class="project-card" data-project="proyecto6">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Brawl community</h3>
+                                <p>Página web desarrollada para sugerir cambios dentro de un juego de mobile llamado "Brawl stars".</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/AndresilloDev/BrawlStars" class="project-link"><i class="fab fa-github"></i> Backend/Frontend</a>
+                                </div>
+                                <button class="view-project-btn">Ver Galería</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn" aria-label="Proyecto anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-indicators"></div>
+                    <button class="carousel-btn next-btn" aria-label="Proyecto siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades-tecnicas" class="section">
+            <div class="section-header">
+                <h2>Conocimientos Técnicos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="tech-skills-container">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-skills">
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>HTML5</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>CSS</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span class="skill-percentage">55%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 55%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>React</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-skills">
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>Spring Boot</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>Node.js</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>MongoDB</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>SQL</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Herramientas</h3>
+                    <div class="tech-skills">
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>Git</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>VS Code</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>Figma</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-skill">
+                            <div class="skill-header">
+                                <span>IntelliJ IDEA</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>orlandoruizsantos@hotmail.com</p>
+                    <a href="orlandoruizsantos@hotmail.com" class="contact-link">Enviar email</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>github.com/RuuizOr</p>
+                    <a href="https://github.com/RuuizOr" target="_blank" class="contact-link">Ver perfil</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Teléfono</h3>
+                    <p>+52 777 548 72 99</p>
+                    <a href="tel:+7775487299" class="contact-link">Llamar</a>
+                </div>
+            </div>
+            <div class="social-container">
+                <h3>Sígueme en redes sociales</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/orlando-ruiz-santos-654371312/" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ruuizor/" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/RuizSantos02" class="social-link" aria-label="Dribbble">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 RUIZOR</p>
         </div>
-        <div class="col-md-2">
-            <p align="left">
-            <img src="https://www.pngmart.com/files/16/Vector-Dog-Face-PNG-Free-Download.png" width="80" height="80">
+    </footer>
+
+    <!-- Modal para la galería de proyectos -->
+    <div class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Título del Proyecto</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="project-gallery">
+                    <div class="gallery-main">
+                        <img src="/placeholder.svg" alt="Imagen principal del proyecto" class="gallery-main-img">
+                        <button class="gallery-nav prev-img"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next-img"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="gallery-thumbs"></div>
+                </div>
+                <div class="project-details">
+                    <div class="project-description">
+                        <h3>Descripción</h3>
+                        <p></p>
+                    </div>
+                    <div class="project-features">
+                        <h3>Características</h3>
+                        <ul></ul>
+                    </div>
+                    <div class="project-technologies">
+                        <h3>Tecnologías</h3>
+                        <div class="tech-tags"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn secondary code-link" target="_blank">Ver Código</a>
+            </div>
         </div>
     </div>
-    <br>
-    <div class="row rowMargin">
-        <div class="col-md-4"><br><br>
-            <marquee direction="up" scrollamount=4>
-                <p align="center">
-                <img src="img/b1.jpg" width="250" height="290">
-            </marquee>
-        </div>
-        <div class="col-md-4">
-            <section class="datos">
-                <h4><b>Información de mi mascota:</b></h4>
-                <ul class="listaDatos">
-                    <li>Nombre: Bolillo.</li>
-                    <li>Raza: Chihuahua.</li>
-                    <li>Color: Café con blanco.</li>
-                    <li>Tamaño: Pequeño.</li>
-                    <li>Sexo: Macho.</li>
-                    <li>Alimento: Croquetas.</li>
-                </ul> 
-            </section>    
-        </div>
-        <div class="col-md-4"><br><br>
-            <marquee direction="up" scrollamount=4>
-                <p align="center">
-                <img src="img/b2.jpg" width="250" height="290">
-            </marquee>
-        </div>  
-    </div>
-    <br><br>
-    <div class="row pie rowMargin">        
-        <div class="col-md-12">
-            <footer> 
-                <p align="center">
-                <b>Fin</b>    
-            </footer>
-        </div>  
-    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
